@@ -24,7 +24,7 @@ export class AppComponent {
   ];
 
   addForm;
-  storedIndex=[]
+  storedIndex=[1]
   constructor(private fb: FormBuilder) {
     this.addForm = this.fb.group({
       rows: this.fb.array([])
@@ -47,7 +47,7 @@ export class AppComponent {
 
   onSelectValue(value,i){
     console.log(value,i)
-    if(value){
+    if(value.name='if'){
 this.storedIndex.push(i)
     // if(value.name==="if"){
     //   this.high=false
