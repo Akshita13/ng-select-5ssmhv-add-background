@@ -47,14 +47,14 @@ export class AppComponent {
 
   onSelectValue(value,i){
     console.log(value,i)
-    if(value.name='if'){
-this.storedIndex.push(i)
-    // if(value.name==="if"){
-    //   this.high=false
-    // }else{
-    //   this.high=true
-    // }
+//     if(value.name='if'){
+// this.storedIndex.push(i)
+    if(value.name==="if"){
+      this.high=false
+    }else{
+      this.high=true
+    }
     }
 
-  }
+  
 }
